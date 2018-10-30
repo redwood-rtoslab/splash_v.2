@@ -4,19 +4,18 @@
 int main(void)
 {
         Processing_block A;
-        input_port<default_data::Msg> B;
         output_port<default_data::Msg> C;
+	output_port<default_data::Msg> D;
 	
-	dds::sub::Sample<default_data::Msg> received_data;
-
-        B.attach(A,"TEST_2");
+        C.attach(&A,"Test");
+	D.attach(&A,"Test2");
 		
-	
+	default_data::Msg data;	
 
 	while(1)
 	{
 
-		B.read(&received_data);
-		printf("%d\n",received_data.data().id());	
+		C.write(data);
+		D.write(data);
 	}
 }
