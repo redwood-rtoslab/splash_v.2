@@ -1,0 +1,32 @@
+========================================================================================
+Report      : API_INFO
+Date        : Mon Oct 29 00:47:52 PDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : ubuntu
+Process     : sample_main2 <47621>
+Thread      : recv 7fbb8c13e700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_checkMaxSamplesWarningLevel/v_kernel.c/1865/769/1540799272.399304256/0
+========================================================================================
+Report      : API_INFO
+Date        : Mon Oct 29 00:49:00 PDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : ubuntu
+Process     : sample_main2 <47781>
+Thread      : recv 7f2114bc0700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_checkMaxSamplesWarningLevel/v_kernel.c/1865/769/1540799340.284382862/0
+========================================================================================
+Report      : API_INFO
+Date        : Mon Oct 29 00:49:30 PDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : ubuntu
+Process     : sample_main2 <47858>
+Thread      : recv 7f6c23936700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_checkMaxSamplesWarningLevel/v_kernel.c/1865/769/1540799370.382076899/0
+========================================================================================
+Report      : API_INFO
+Date        : Mon Oct 29 00:52:09 PDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : ubuntu
+Process     : sample_main2 <48061>
+Thread      : recv 7fd247a16700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_checkMaxSamplesWarningLevel/v_kernel.c/1865/769/1540799529.914800827/0
