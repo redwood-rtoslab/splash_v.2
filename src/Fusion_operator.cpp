@@ -1,0 +1,5 @@
+
+class Fusion_operator
+{
+
+};

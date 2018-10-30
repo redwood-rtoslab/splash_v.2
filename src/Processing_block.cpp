@@ -80,7 +80,7 @@ void processingblock_listener<Data_0>::register_topic_name(char* topic_name)
 	this->input_topic_name = topic_name;
 }
 
-template <typename Data_0>
+template <typename Data_0>//passing data reader as the parameter is crucial
 void processingblock_listener<Data_0>::on_data_available(dds::sub::DataReader<Data_0>& dr)
 {
 	Processingblock->user_function(input_topic_name);
