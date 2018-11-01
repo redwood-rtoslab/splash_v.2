@@ -1,6 +1,8 @@
 #include "data_type_headers.h"
 #include <vector>
 #include <map>
+#include <mutex>
+
 class Processing_block
 {
 	private:
@@ -18,7 +20,8 @@ class Processing_block
 		std::map<char*,void*>* get_output_port_map();
 		void* get_output_port(char* topic_name);
 		void* get_input_port(char* topic_name);
-		void user_function(char* input_topic_name);	
+		void type_caster(char* input_topic_name);	
+		void initiate();
 };
 
 dds::domain::DomainParticipant* Processing_block::get_domain()
@@ -55,6 +58,12 @@ void* Processing_block::get_input_port(char* topic_name)
 {
 	return input_port_map[topic_name];
 }
+
+void Processing_block::initiate()
+{
+
+	while(1) sleep(10000);
+}
 //============================================================================================
 template <typename Data_0>
 class processingblock_listener: public dds::sub::NoOpDataReaderListener<Data_0>
@@ -62,6 +71,7 @@ class processingblock_listener: public dds::sub::NoOpDataReaderListener<Data_0>
 	private:
 		Processing_block* Processingblock;
 		char* input_topic_name;
+		std::mutex listener_mutex;
 	public:
 		virtual void on_data_available(dds::sub::DataReader<Data_0>& dr);
 		void register_processing_block(Processing_block*);
@@ -83,7 +93,9 @@ void processingblock_listener<Data_0>::register_topic_name(char* topic_name)
 template <typename Data_0>//passing data reader as the parameter is crucial
 void processingblock_listener<Data_0>::on_data_available(dds::sub::DataReader<Data_0>& dr)
 {
-	Processingblock->user_function(input_topic_name);
+	listener_mutex.lock();
+	Processingblock->type_caster(input_topic_name);
+	listener_mutex.unlock();
 }
 
 //============================================================================================
