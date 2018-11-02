@@ -5625,3 +5625,2364 @@ Node        : ubuntu
 Process     : sample_main <65984>
 Thread      : signalHandler 7f427dd93700
 Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541048451.896590883/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:09:41 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1207842276 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <69023>
+Thread      : spliced 7f76ea2d2700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541074181.961272878/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:09:41 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <69023>
+Thread      : spliced 7f76ea2d2700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541074181.961562571/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:09:41 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <69023>
+Thread      : spliced 7f76ea2d2700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541074181.962554913/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 05:09:41 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <69023>
+Thread      : ddsi2 7f76e7add700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541074181.964791375/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:09:41 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <69023>
+Thread      : ddsi2 7f76e7add700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541074181.977462809/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:09:45 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1153301467 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <69052>
+Thread      : spliced 7fc5260ef700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541074185.499760508/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:09:45 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <69052>
+Thread      : spliced 7fc5260ef700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541074185.499972347/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:09:45 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <69052>
+Thread      : spliced 7fc5260ef700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541074185.500731338/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 05:09:45 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main2 <69052>
+Thread      : ddsi2 7fc5238fa700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541074185.502460615/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:09:45 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <69052>
+Thread      : ddsi2 7fc5238fa700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541074185.506839445/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:09:48 PDT 2018
+Description : Termination request (signal 2) received from PID 69052 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <69052>
+Thread      : signalHandler 7fc52432b700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541074188.144891667/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:12:58 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1262698334 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <69185>
+Thread      : spliced 7f3067c42700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541074378.872056154/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:12:58 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <69185>
+Thread      : spliced 7f3067c42700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541074378.872249620/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:12:58 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <69185>
+Thread      : spliced 7f3067c42700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541074378.874176393/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 05:12:58 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <69185>
+Thread      : ddsi2 7f306544d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541074378.876763797/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:12:58 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <69185>
+Thread      : ddsi2 7f306544d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541074378.881432265/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:13:01 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1438305367 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <69214>
+Thread      : spliced 7f7a15533700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541074381.220563296/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:13:01 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <69214>
+Thread      : spliced 7f7a15533700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541074381.220848090/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:13:01 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <69214>
+Thread      : spliced 7f7a15533700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541074381.221864667/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 05:13:01 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main2 <69214>
+Thread      : ddsi2 7f7a12d3e700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541074381.224107456/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:13:01 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <69214>
+Thread      : ddsi2 7f7a12d3e700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541074381.230763810/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:13:09 PDT 2018
+Description : Termination request (signal 2) received from PID 69214 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <69214>
+Thread      : signalHandler 7f7a1376f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541074389.000299514/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:29:46 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1876206106 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <69782>
+Thread      : spliced 7fd32809f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541075386.029661817/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:29:46 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <69782>
+Thread      : spliced 7fd32809f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541075386.029905613/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:29:46 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <69782>
+Thread      : spliced 7fd32809f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541075386.030645711/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 05:29:46 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <69782>
+Thread      : ddsi2 7fd3258aa700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541075386.033371467/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:29:46 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <69782>
+Thread      : ddsi2 7fd3258aa700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541075386.037754702/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:29:49 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 2047405277 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <69811>
+Thread      : spliced 7f59af9ea700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541075389.235679248/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:29:49 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <69811>
+Thread      : spliced 7f59af9ea700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541075389.235885852/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:29:49 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <69811>
+Thread      : spliced 7f59af9ea700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541075389.236551684/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 05:29:49 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main2 <69811>
+Thread      : ddsi2 7f59ad1f5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541075389.239447869/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:29:49 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <69811>
+Thread      : ddsi2 7f59ad1f5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541075389.245518461/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 05:29:52 PDT 2018
+Description : Termination request (signal 2) received from PID 69811 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <69811>
+Thread      : signalHandler 7f59adc26700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541075392.812250944/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:03:26 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1553246318 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <70669>
+Thread      : spliced 7fd4ca3c8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541077406.942103205/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:03:26 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <70669>
+Thread      : spliced 7fd4ca3c8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541077406.942309534/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:03:26 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <70669>
+Thread      : spliced 7fd4ca3c8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077406.943056118/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:03:26 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <70669>
+Thread      : ddsi2 7fd4c7bd3700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541077406.945767483/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:03:26 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <70669>
+Thread      : ddsi2 7fd4c7bd3700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077406.950244584/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:03:31 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1846576310 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <70700>
+Thread      : spliced 7f62b7e35700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541077411.350106318/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:03:31 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <70700>
+Thread      : spliced 7f62b7e35700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541077411.350302411/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:03:31 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <70700>
+Thread      : spliced 7f62b7e35700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077411.351019227/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:03:31 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main2 <70700>
+Thread      : ddsi2 7f62b5640700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541077411.352657044/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:03:31 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <70700>
+Thread      : ddsi2 7f62b5640700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077411.356326040/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:03:34 PDT 2018
+Description : Termination request (signal 2) received from PID 70700 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <70700>
+Thread      : signalHandler 7f62b6071700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541077414.541466286/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:36 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 712445354 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <70929>
+Thread      : spliced 7f66362c0700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541077776.549941187/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:36 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <70929>
+Thread      : spliced 7f66362c0700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541077776.558450776/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:36 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <70929>
+Thread      : spliced 7f66362c0700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077776.559371505/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:09:36 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <70929>
+Thread      : ddsi2 7f6633acb700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541077776.561115197/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:36 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <70929>
+Thread      : ddsi2 7f6633acb700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077776.570484110/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:39 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1203703539 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <70958>
+Thread      : spliced 7f4f24bc5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541077779.515528069/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:39 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <70958>
+Thread      : spliced 7f4f24bc5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541077779.515716561/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:39 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <70958>
+Thread      : spliced 7f4f24bc5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077779.517155394/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:09:39 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <70958>
+Thread      : ddsi2 7f4f223d0700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541077779.518714569/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:39 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <70958>
+Thread      : ddsi2 7f4f223d0700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077779.522390319/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:41 PDT 2018
+Description : Termination request (signal 2) received from PID 70958 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main <70958>
+Thread      : signalHandler 7f4f22e01700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541077781.051524454/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:42 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1827858428 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <70987>
+Thread      : spliced 7efe558bf700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541077782.363949421/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:42 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <70987>
+Thread      : spliced 7efe558bf700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541077782.364158257/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:42 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <70987>
+Thread      : spliced 7efe558bf700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077782.365670378/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:09:42 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main2 <70987>
+Thread      : ddsi2 7efe530ca700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541077782.367617672/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:42 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <70987>
+Thread      : ddsi2 7efe530ca700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077782.371270449/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:54 PDT 2018
+Description : Missed heartbeat for node 712445354. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <70987>
+Thread      : OSPL Garbage Collector 7efe53469700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541077794.579548016/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:56 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 456372206 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71019>
+Thread      : spliced 7ffff7ff5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541077796.040167314/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:56 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71019>
+Thread      : spliced 7ffff7ff5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541077796.040936323/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:56 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71019>
+Thread      : spliced 7ffff7ff5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077796.044845233/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:09:56 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71019>
+Thread      : ddsi2 7ffff57f4700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541077796.072952361/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:09:56 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71019>
+Thread      : ddsi2 7ffff57f4700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077796.082800031/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:10:08 PDT 2018
+Description : Missed heartbeat for node 456372206. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <70987>
+Thread      : OSPL Garbage Collector 7efe53469700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541077808.284178069/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:05 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1802125903 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71248>
+Thread      : spliced 7f2f2e9a5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541077865.068706466/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:05 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71248>
+Thread      : spliced 7f2f2e9a5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541077865.079082334/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:05 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71248>
+Thread      : spliced 7f2f2e9a5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077865.079806072/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:11:05 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71248>
+Thread      : ddsi2 7f2f2c1b0700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541077865.083455411/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:05 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71248>
+Thread      : ddsi2 7f2f2c1b0700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077865.093994749/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:15 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 802437703 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71302>
+Thread      : spliced 7ffff7ff5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541077875.917831296/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:15 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71302>
+Thread      : spliced 7ffff7ff5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541077875.920468700/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:15 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71302>
+Thread      : spliced 7ffff7ff5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077875.928882070/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:11:15 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71302>
+Thread      : ddsi2 7ffff57f4700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541077875.945608216/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:15 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71302>
+Thread      : ddsi2 7ffff57f4700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077875.961126230/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:17 PDT 2018
+Description : Missed heartbeat for node 1802125903. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <70987>
+Thread      : OSPL Garbage Collector 7efe53469700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541077877.321339241/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:27 PDT 2018
+Description : Missed heartbeat for node 802437703. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <70987>
+Thread      : OSPL Garbage Collector 7efe53469700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541077887.998744638/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:11:47 PDT 2018
+Description : Termination request (signal 2) received from PID 70987 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <70987>
+Thread      : signalHandler 7efe53afb700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541077907.011037788/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:13:12 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1288671318 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71434>
+Thread      : spliced 7f2204791700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541077992.700320685/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:13:12 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71434>
+Thread      : spliced 7f2204791700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541077992.700581655/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:13:12 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71434>
+Thread      : spliced 7f2204791700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077992.701454271/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:13:12 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71434>
+Thread      : ddsi2 7f2201f9c700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541077992.703077240/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:13:12 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71434>
+Thread      : ddsi2 7f2201f9c700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077992.707220125/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:13:17 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1458827576 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : spliced 7f4c12eb8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541077997.532197472/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:13:17 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : spliced 7f4c12eb8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541077997.532473396/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:13:17 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : spliced 7f4c12eb8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077997.533149947/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:13:17 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : ddsi2 7f4c106c3700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541077997.534923890/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:13:17 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : ddsi2 7f4c106c3700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541077997.542329909/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:13:29 PDT 2018
+Description : Missed heartbeat for node 1288671318. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : OSPL Garbage Collector 7f4c10a62700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078009.644002753/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:14:30 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 209449709 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71566>
+Thread      : spliced 7ff87200d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078070.572208084/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:14:30 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71566>
+Thread      : spliced 7ff87200d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078070.573983069/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:14:30 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71566>
+Thread      : spliced 7ff87200d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078070.574685162/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:14:30 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71566>
+Thread      : ddsi2 7ff86f818700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078070.578484232/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:14:30 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71566>
+Thread      : ddsi2 7ff86f818700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078070.585533514/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:14:42 PDT 2018
+Description : Missed heartbeat for node 209449709. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : OSPL Garbage Collector 7f4c10a62700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078082.846987015/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:00 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1740434781 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71676>
+Thread      : spliced 7fc4afe44700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078100.479875909/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:00 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71676>
+Thread      : spliced 7fc4afe44700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078100.480150688/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:00 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71676>
+Thread      : spliced 7fc4afe44700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078100.483599470/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:15:00 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71676>
+Thread      : ddsi2 7fc4ad64f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078100.487585845/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:00 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71676>
+Thread      : ddsi2 7fc4ad64f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078100.496237117/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:04 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 843478413 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71706>
+Thread      : spliced 7f91a40b8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078104.654253309/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:04 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71706>
+Thread      : spliced 7f91a40b8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078104.654470435/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:04 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71706>
+Thread      : spliced 7f91a40b8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078104.655257353/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:15:04 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71706>
+Thread      : ddsi2 7f91a18c3700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078104.658944151/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:04 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71706>
+Thread      : ddsi2 7f91a18c3700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078104.682690761/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:07 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 537696267 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71736>
+Thread      : spliced 7f916cf2d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078107.181357964/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:07 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71736>
+Thread      : spliced 7f916cf2d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078107.181583856/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:07 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71736>
+Thread      : spliced 7f916cf2d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078107.182297896/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:15:07 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71736>
+Thread      : ddsi2 7f916a738700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078107.186010048/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:07 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71736>
+Thread      : ddsi2 7f916a738700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078107.194464244/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:09 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 787154887 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71766>
+Thread      : spliced 7fd2af33d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078109.351596099/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:09 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71766>
+Thread      : spliced 7fd2af33d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078109.351833886/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:09 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71766>
+Thread      : spliced 7fd2af33d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078109.353957888/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:15:09 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71766>
+Thread      : ddsi2 7fd2acb48700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078109.355605085/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:09 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71766>
+Thread      : ddsi2 7fd2acb48700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078109.365683942/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:12 PDT 2018
+Description : Missed heartbeat for node 1740434781. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : OSPL Garbage Collector 7f4c10a62700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078112.727995910/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:16 PDT 2018
+Description : Missed heartbeat for node 843478413. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : OSPL Garbage Collector 7f4c10a62700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078116.765211748/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:19 PDT 2018
+Description : Missed heartbeat for node 537696267. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : OSPL Garbage Collector 7f4c10a62700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078119.283425026/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:20 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 2068917797 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71799>
+Thread      : spliced 7ffff7ff5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078120.019683737/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:20 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71799>
+Thread      : spliced 7ffff7ff5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078120.021593210/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:20 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71799>
+Thread      : spliced 7ffff7ff5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078120.024626442/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:15:20 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71799>
+Thread      : ddsi2 7ffff57f4700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078120.046678346/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:20 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71799>
+Thread      : ddsi2 7ffff57f4700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078120.060773686/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:21 PDT 2018
+Description : Missed heartbeat for node 787154887. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : OSPL Garbage Collector 7f4c10a62700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078121.615181243/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:15:32 PDT 2018
+Description : Missed heartbeat for node 2068917797. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : OSPL Garbage Collector 7f4c10a62700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078132.282635414/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:16:48 PDT 2018
+Description : Termination request (signal 2) received from PID 71463 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <71463>
+Thread      : signalHandler 7f4c110f4700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541078208.390890837/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:16:51 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 263116213 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <71914>
+Thread      : spliced 7f47fd2bd700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078211.981013118/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:16:51 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <71914>
+Thread      : spliced 7f47fd2bd700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078211.988172971/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:16:51 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71914>
+Thread      : spliced 7f47fd2bd700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078211.988961280/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:16:51 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <71914>
+Thread      : ddsi2 7f47faac8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078211.990617961/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:16:51 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <71914>
+Thread      : ddsi2 7f47faac8700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078211.999386760/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:01 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 388700023 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : spliced 7fa6cec61700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078221.891886794/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:01 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : spliced 7fa6cec61700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078221.892183239/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:01 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : spliced 7fa6cec61700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078221.893183211/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:17:01 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : ddsi2 7fa6cc46c700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078221.895607283/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:01 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : ddsi2 7fa6cc46c700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078221.902094018/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:14 PDT 2018
+Description : Missed heartbeat for node 263116213. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : OSPL Garbage Collector 7fa6cc80b700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078234.169794429/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:29 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 2138432220 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <72173>
+Thread      : spliced 7f6d47d4d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078249.903520081/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:29 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <72173>
+Thread      : spliced 7f6d47d4d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078249.903856826/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:29 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <72173>
+Thread      : spliced 7f6d47d4d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078249.906896087/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:17:29 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <72173>
+Thread      : ddsi2 7f6d45558700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078249.909225811/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:29 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <72173>
+Thread      : ddsi2 7f6d45558700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078249.919942433/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:33 PDT 2018
+Description : Termination request (signal 2) received from PID 72173 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main <72173>
+Thread      : signalHandler 7f6d45f89700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541078253.033559251/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:17:42 PDT 2018
+Description : Missed heartbeat for node 2138432220. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : OSPL Garbage Collector 7fa6cc80b700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078262.193766684/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:18:19 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 6364647 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <72345>
+Thread      : spliced 7f7dd25be700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078299.052033121/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:18:19 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <72345>
+Thread      : spliced 7f7dd25be700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078299.052365656/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:18:19 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <72345>
+Thread      : spliced 7f7dd25be700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078299.055419665/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:18:19 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <72345>
+Thread      : ddsi2 7f7db3d62700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078299.059832398/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:18:19 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <72345>
+Thread      : ddsi2 7f7db3d62700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078299.065801625/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:18:31 PDT 2018
+Description : Missed heartbeat for node 6364647. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : OSPL Garbage Collector 7fa6cc80b700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078311.280331891/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:19:16 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1306281920 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <72514>
+Thread      : spliced 7fed2011e700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078356.633212116/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:19:16 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <72514>
+Thread      : spliced 7fed2011e700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078356.640370999/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:19:16 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <72514>
+Thread      : spliced 7fed2011e700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078356.642427510/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:19:16 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <72514>
+Thread      : ddsi2 7fed1d929700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078356.644060650/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:19:16 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <72514>
+Thread      : ddsi2 7fed1d929700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078356.652057039/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:19:29 PDT 2018
+Description : Missed heartbeat for node 1306281920. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : OSPL Garbage Collector 7fa6cc80b700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078369.145429479/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:20:43 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 437073107 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <72711>
+Thread      : spliced 7f6987206700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078443.991916786/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:20:43 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <72711>
+Thread      : spliced 7f6987206700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078443.992187789/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:20:43 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <72711>
+Thread      : spliced 7f6987206700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078443.992932683/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:20:44 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <72711>
+Thread      : ddsi2 7f698480f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078444.011344223/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:20:44 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <72711>
+Thread      : ddsi2 7f698480f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078444.017937024/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:20:56 PDT 2018
+Description : Missed heartbeat for node 437073107. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : OSPL Garbage Collector 7fa6cc80b700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078456.214490013/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:22:15 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 307500937 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <72914>
+Thread      : spliced 7f70c4c56700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078535.173230902/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:22:15 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <72914>
+Thread      : spliced 7f70c4c56700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078535.173515288/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:22:15 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <72914>
+Thread      : spliced 7f70c4c56700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078535.174494055/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:22:15 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <72914>
+Thread      : ddsi2 7f70c225f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078535.178812098/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:22:15 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <72914>
+Thread      : ddsi2 7f70c225f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078535.189552913/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:22:27 PDT 2018
+Description : Missed heartbeat for node 307500937. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : OSPL Garbage Collector 7fa6cc80b700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541078547.448241406/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:22:50 PDT 2018
+Description : Termination request (signal 2) received from PID 71947 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <71947>
+Thread      : signalHandler 7fa6cce9d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541078570.192706617/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:25:18 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 474878714 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <73231>
+Thread      : spliced 7f568e504700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078718.625673229/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:25:18 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <73231>
+Thread      : spliced 7f568e504700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078718.625943365/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:25:18 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <73231>
+Thread      : spliced 7f568e504700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078718.626623362/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:25:18 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main <73231>
+Thread      : ddsi2 7f568bb0d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078718.628245179/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:25:18 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <73231>
+Thread      : ddsi2 7f568bb0d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078718.632418651/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:25:22 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 854636482 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <73260>
+Thread      : spliced 7fed60a05700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541078722.179908318/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:25:22 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <73260>
+Thread      : spliced 7fed60a05700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541078722.180191518/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:25:22 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <73260>
+Thread      : spliced 7fed60a05700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078722.181202908/0
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 01 06:25:22 PDT 2018
+Description : using network interface ens33 (192.168.189.130) selected arbitrarily from: ens33, vpn0
+
+Node        : ubuntu
+Process     : sample_main2 <73260>
+Thread      : ddsi2 7fed5e00e700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/ddsi2/q_nwif.c/988/0/1541078722.183514232/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:25:22 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <73260>
+Thread      : ddsi2 7fed5e00e700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541078722.190277551/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:25:24 PDT 2018
+Description : Termination request (signal 2) received from PID 73260 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <73260>
+Thread      : signalHandler 7fed5ea3f700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541078724.981733910/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 06:25:25 PDT 2018
+Description : Termination request (signal 2) received from PID 73231 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main <73231>
+Thread      : signalHandler 7f568c53e700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541078725.488632376/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:24 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1390398787 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <77603>
+Thread      : spliced 7ff154d72700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541132244.270450243/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:24 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <77603>
+Thread      : spliced 7ff154d72700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541132244.270686349/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:24 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <77603>
+Thread      : spliced 7ff154d72700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541132244.271424499/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:24 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <77603>
+Thread      : ddsi2 7ff15237b700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541132244.283571979/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:24 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1619690692 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <77628>
+Thread      : spliced 7f1988fa5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541132244.738835330/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:24 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <77628>
+Thread      : spliced 7f1988fa5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541132244.739137861/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:24 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <77628>
+Thread      : spliced 7f1988fa5700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541132244.739830551/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:24 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <77628>
+Thread      : ddsi2 7f19865ae700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541132244.751859608/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:28 PDT 2018
+Description : Termination request (signal 2) received from PID 77628 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main <77628>
+Thread      : signalHandler 7f1986fdf700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541132248.386062942/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:37 PDT 2018
+Description : Missed heartbeat for node 1619690692. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <77603>
+Thread      : OSPL Garbage Collector 7ff15271a700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541132257.513799614/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:56 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 781720747 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <77694>
+Thread      : spliced 7f52b4cf3700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541132276.071119294/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:56 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <77694>
+Thread      : spliced 7f52b4cf3700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541132276.071432360/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:56 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <77694>
+Thread      : spliced 7f52b4cf3700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541132276.073744575/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:56 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <77694>
+Thread      : ddsi2 7f52b22fc700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541132276.086194205/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:17:58 PDT 2018
+Description : Termination request (signal 2) received from PID 77694 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main <77694>
+Thread      : signalHandler 7f52b2d2d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541132278.408950815/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:18:08 PDT 2018
+Description : Missed heartbeat for node 781720747. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : sample_main2 <77603>
+Thread      : OSPL Garbage Collector 7ff15271a700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_spliced/v_spliced.c/2380/769/1541132288.396008196/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 21:19:06 PDT 2018
+Description : Termination request (signal 2) received from PID 77603 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <77603>
+Thread      : signalHandler 7ff152dac700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541132346.063082366/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:05:46 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1510285149 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <78361>
+Thread      : spliced 7f9abb3b9700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541138746.586435469/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:05:46 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <78361>
+Thread      : spliced 7f9abb3b9700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541138746.586628747/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:05:46 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <78361>
+Thread      : spliced 7f9abb3b9700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541138746.587414669/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:05:46 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <78361>
+Thread      : ddsi2 7f9ab89c2700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541138746.594985967/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:05:49 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 2093335194 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <78390>
+Thread      : spliced 7f9d7ccfb700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541138749.845531808/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:05:49 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <78390>
+Thread      : spliced 7f9d7ccfb700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541138749.845816141/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:05:49 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <78390>
+Thread      : spliced 7f9d7ccfb700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541138749.847741038/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:05:49 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <78390>
+Thread      : ddsi2 7f9d7a304700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541138749.856743599/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:05:52 PDT 2018
+Description : Termination request (signal 2) received from PID 78390 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <78390>
+Thread      : signalHandler 7f9d7ad35700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541138752.167360045/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:05:52 PDT 2018
+Description : Termination request (signal 2) received from PID 78361 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main <78361>
+Thread      : signalHandler 7f9ab93f3700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541138752.514033049/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:11:00 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1595422939 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main <78524>
+Thread      : spliced 7f11b0721700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541139060.101259711/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:11:00 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main <78524>
+Thread      : spliced 7f11b0721700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541139060.101482247/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:11:00 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <78524>
+Thread      : spliced 7f11b0721700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541139060.103805788/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:11:00 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main <78524>
+Thread      : ddsi2 7f11add2a700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541139060.109480793/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:11:02 PDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1810029951 from [1,2147483647]
+Node        : ubuntu
+Process     : sample_main2 <78553>
+Thread      : spliced 7f00cde85700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1541139062.882484062/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:11:02 PDT 2018
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : sample_main2 <78553>
+Thread      : spliced 7f00cde85700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1541139062.884095643/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:11:02 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <78553>
+Thread      : spliced 7f00cde85700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541139062.885118348/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:11:02 PDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : sample_main2 <78553>
+Thread      : ddsi2 7f00cb48e700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1541139062.891252765/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:11:06 PDT 2018
+Description : Termination request (signal 2) received from PID 78553 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main2 <78553>
+Thread      : signalHandler 7f00cbebf700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541139066.673860758/0
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 01 23:11:06 PDT 2018
+Description : Termination request (signal 2) received from PID 78524 (self), UID 1000
+Node        : ubuntu
+Process     : sample_main <78524>
+Thread      : signalHandler 7f11ae75b700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/signalHandlerThread/os_signalHandler.c/583/0/1541139066.976996459/0

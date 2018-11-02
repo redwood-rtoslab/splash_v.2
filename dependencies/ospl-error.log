@@ -30,3 +30,35 @@ Node        : ubuntu
 Process     : sample_main2 <48061>
 Thread      : recv 7fd247a16700
 Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_checkMaxSamplesWarningLevel/v_kernel.c/1865/769/1540799529.914800827/0
+========================================================================================
+Context     : dds::topic::detail::Topic<T>::Topic
+Date        : Thu Nov 01 06:20:45 PDT 2018
+Node        : ubuntu
+Process     : sample_main <72711>
+Thread      : main thread 7f69871e7740
+Internals   : TTopicImpl.hpp/203/6.7.180404OSS/de8c6f4/de8c6f4/0
+----------------------------------------------------------------------------------------
+Report      : Error: Failed to create Topic
+Internals   : dds::topic::detail::Topic<T>::Topic/TTopicImpl.hpp/203/1/1541078445.183656504
+----------------------------------------------------------------------------------------
+Report      : Create kernel entity failed. For Topic: <Test2>
+Internals   : u_topicNew/u_topic.c/235/772/1541078445.183663215
+----------------------------------------------------------------------------------------
+Report      : Precondition not met: Create Topic "Test2" failed: typename <default_data::Msg> differs exiting definition <default_data2::Msg>.
+Internals   : v_topicNew/v_topicImpl.c/478/779/1541078445.183666153
+========================================================================================
+Context     : dds::topic::detail::Topic<T>::Topic
+Date        : Thu Nov 01 06:22:16 PDT 2018
+Node        : ubuntu
+Process     : sample_main <72914>
+Thread      : main thread 7f70c4c37740
+Internals   : TTopicImpl.hpp/203/6.7.180404OSS/de8c6f4/de8c6f4/0
+----------------------------------------------------------------------------------------
+Report      : Error: Failed to create Topic
+Internals   : dds::topic::detail::Topic<T>::Topic/TTopicImpl.hpp/203/1/1541078536.333162012
+----------------------------------------------------------------------------------------
+Report      : Create kernel entity failed. For Topic: <Test2>
+Internals   : u_topicNew/u_topic.c/235/772/1541078536.333165902
+----------------------------------------------------------------------------------------
+Report      : Precondition not met: Create Topic "Test2" failed: typename <default_data::Msg> differs exiting definition <default_data2::Msg>.
+Internals   : v_topicNew/v_topicImpl.c/478/779/1541078536.333168605

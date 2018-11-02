@@ -16,7 +16,7 @@ COMPILE.c     = $(CC) $(CFLAGS) $(CPPFLAGS) -c
 COMPILE.cc    = $(CXX) $(CCFLAGS) $(CPPFLAGS) -c
 LDFLAGS       = -L"." -L"/home/paul/DDS/HDE/x86_64.linux/lib" -Wl,-rpath,\$$ORIGIN -Wl,-rpath,\$$/home/paul/DDS/HDE/x86_64.linux/lib
 CCC           = $(CXX)
-MAKEFILE      = Makefile.User_functions
+MAKEFILE      = Makefile.Source_tag_user_functions
 DEPENDENCIES  = $(MAKEFILE)
 LTARGETDIR    = ./
 CAT           = cat
@@ -32,15 +32,15 @@ EXEEXT        =
 LIBPREFIX     = lib
 LIBSUFFIX     = 
 GENFLAGS      = -O3 -DNDEBUG
-LDLIBS        = -l"Processing_block$(LIBSUFFX)" -l"default_data_Types$(LIBSUFFIX)" -l"dcpsisocpp2$(LIBSUFFIX)" -l"ddskernel" -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
-OBJS          = .obj$(CFG)/User_functions$(OBJEXT)
+LDLIBS        = -l"lateral_distance_error_Types$(LIBSUFFIX)" -l"default_data_Types$(LIBSUFFIX)" -l"dcpsisocpp2$(LIBSUFFIX)" -l"ddskernel" -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
+OBJS          = .obj$(CFG)/Source_tag_user_functions$(OBJEXT)
 AREXT         = .a
-LIB           = $(LTARGETDIR)$(LIBPREFIX)User_functions$(LIBSUFFIX)$(AREXT)
+LIB           = $(LTARGETDIR)$(LIBPREFIX)Source_tag_user_functions$(LIBSUFFIX)$(AREXT)
 SOEXT         = .so
 SHTARGETDIR   = ./
-SHLIB         = $(SHTARGETDIR)$(LIBPREFIX)User_functions$(LIBSUFFIX)$(SOEXT)
+SHLIB         = $(SHTARGETDIR)$(LIBPREFIX)Source_tag_user_functions$(LIBSUFFIX)$(SOEXT)
 SHFLAGS       = -shared
-SRC           = ../src/User_functions.cpp
+SRC           = ../src/Source_tag_user_functions.cpp
 LINK.cc       = $(LD) $(LDFLAGS)
 DYNAMICFLAGS  = -DOSPL_BUILDEXAMPLE_IMPL_LIB
 EXPORTFLAGS   = $(DYNAMICFLAGS)
@@ -62,9 +62,9 @@ $(LIB): $(OBJS)
 generated: $(GENERATED_DIRTY)
 	@-:
 
-.obj$(CFG)/User_functions$(OBJEXT): ../src/User_functions.cpp
+.obj$(CFG)/Source_tag_user_functions$(OBJEXT): ../src/Source_tag_user_functions.cpp
 	@$(TESTDIRSTART) ".obj$(CFG)/" $(TESTDIREND) $(MKDIR) ".obj$(CFG)/"
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../src/User_functions.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../src/Source_tag_user_functions.cpp
 
 clean:
 	-$(RM) $(OBJS)

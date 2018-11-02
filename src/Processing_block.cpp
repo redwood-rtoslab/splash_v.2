@@ -2,6 +2,11 @@
 #include <vector>
 #include <map>
 #include <mutex>
+#pragma once
+template <typename Data_0>
+class input_port;
+
+
 
 class Processing_block
 {
@@ -20,8 +25,12 @@ class Processing_block
 		std::map<char*,void*>* get_output_port_map();
 		void* get_output_port(char* topic_name);
 		void* get_input_port(char* topic_name);
-		void type_caster(char* input_topic_name);	
+		void Input_type_caster(char* input_topic_name);	
+		void write(void* output_data, char* output_topic_name);
 		void initiate();
+
+		template <typename Data_0>
+		void pb_user_function(Data_0, char* input_topic);
 };
 
 dds::domain::DomainParticipant* Processing_block::get_domain()
@@ -64,6 +73,8 @@ void Processing_block::initiate()
 
 	while(1) sleep(10000);
 }
+
+
 //============================================================================================
 template <typename Data_0>
 class processingblock_listener: public dds::sub::NoOpDataReaderListener<Data_0>
@@ -72,10 +83,12 @@ class processingblock_listener: public dds::sub::NoOpDataReaderListener<Data_0>
 		Processing_block* Processingblock;
 		char* input_topic_name;
 		std::mutex listener_mutex;
+		input_port<Data_0>* assigned_port;
 	public:
 		virtual void on_data_available(dds::sub::DataReader<Data_0>& dr);
 		void register_processing_block(Processing_block*);
 		void register_topic_name (char* topic_name);
+		void register_input_port (input_port<Data_0>* input_port);
 };
 
 template <typename Data_0>
@@ -85,16 +98,27 @@ void processingblock_listener<Data_0>::register_processing_block(Processing_bloc
 }
 
 template <typename Data_0>
+void processingblock_listener<Data_0>::register_input_port(input_port<Data_0>* input_port)
+{
+	assigned_port = input_port;
+}
+
+template <typename Data_0>
 void processingblock_listener<Data_0>::register_topic_name(char* topic_name)
 {
 	this->input_topic_name = topic_name;
 }
 
+
+
 template <typename Data_0>//passing data reader as the parameter is crucial
 void processingblock_listener<Data_0>::on_data_available(dds::sub::DataReader<Data_0>& dr)
 {
-	listener_mutex.lock();
-	Processingblock->type_caster(input_topic_name);
+	listener_mutex.lock();	
+	dds::sub::Sample<Data_0> message;	
+	assigned_port->read(&message);
+	Data_0 input_message = message.data();
+	Processingblock->pb_user_function<Data_0>(input_message, input_topic_name);	
 	listener_mutex.unlock();
 }
 
@@ -121,6 +145,7 @@ void input_port<Data_0>::attach(Processing_block* pb, char* topic_name)
 	(*(pb->get_input_port_map()))[topic_name] = this;		
 	input_port_listener.register_processing_block(pb);	
 	input_port_listener.register_topic_name(topic_name);
+	input_port_listener.register_input_port(this);
 
 	topic = new dds::topic::Topic<Data_0> (*(pb->get_domain()), topic_name,(pb->get_domain())->default_topic_qos());
 
