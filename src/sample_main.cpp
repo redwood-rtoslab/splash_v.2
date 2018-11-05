@@ -5,7 +5,7 @@
 
 
 template <typename Data_0>
-void Processing_block::pb_user_function(Data_0 message, char* input_topic)
+void Processing_block::user_functions(Data_0 message, char* input_topic)
 {
 	if(!strcmp("Test",input_topic))
 	{//function called when port C receives input
