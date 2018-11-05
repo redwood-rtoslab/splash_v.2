@@ -17,9 +17,7 @@ class Source_tag
 		void* get_output_port(char* topic_name);
 		void write(void* output_data, char* output_topic_name);
 		void initiate();
-
-		template <typename Data_0>
-		void source_tag_user_function(Data_0, char* input_topic);
+		void user_function();
 };
 
 dds::domain::DomainParticipant* Source_tag::get_domain()
@@ -45,7 +43,8 @@ void* Source_tag::get_output_port(char* topic_name)
 void Source_tag::initiate()
 {
 	
-	while(1) sleep(10000);
+		user_function();
+		//sleep(10000);
 }
 
 //============================================================================================================

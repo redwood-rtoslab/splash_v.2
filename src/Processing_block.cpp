@@ -25,7 +25,6 @@ class Processing_block
 		std::map<char*,void*>* get_output_port_map();
 		void* get_output_port(char* topic_name);
 		void* get_input_port(char* topic_name);
-		void Input_type_caster(char* input_topic_name);	
 		void write(void* output_data, char* output_topic_name);
 		void initiate();
 
@@ -171,8 +170,8 @@ class output_port
 		dds::pub::DataWriter<Data_0>*  data_writer;
 	public:
 		dds::pub::DataWriter<Data_0>* get_datawriter();
-		void attach(Processing_block* pb, char* topic_name);
 		void write(Data_0);
+		void attach(Processing_block* pb, char* topic_name);
 };
 
 
@@ -184,12 +183,11 @@ void output_port<Data_0>::attach(Processing_block* pb, char* topic_name)
 
 	data_writer = new dds::pub::DataWriter<Data_0>(*(pb->get_publisher()),*topic,(*(pb->get_publisher())).default_datawriter_qos());
 
-		
+	
 }
 
 template<typename Data_0>
-void output_port<Data_0>::write(Data_0 X)
+void output_port<Data_0>::write(Data_0 data)
 {
-	data_writer->write(X);
+	data_writer->write(data);
 }
-
