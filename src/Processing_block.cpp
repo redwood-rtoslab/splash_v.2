@@ -30,7 +30,7 @@ class Processing_block
 		void initiate();
 
 		template <typename Data_0>
-		void pb_user_function(Data_0, char* input_topic);
+		void user_functions(Data_0, char* input_topic);
 };
 
 dds::domain::DomainParticipant* Processing_block::get_domain()
@@ -75,7 +75,7 @@ void Processing_block::initiate()
 }
 
 
-//============================================================================================
+//============================================================================================================
 template <typename Data_0>
 class processingblock_listener: public dds::sub::NoOpDataReaderListener<Data_0>
 {
@@ -118,11 +118,11 @@ void processingblock_listener<Data_0>::on_data_available(dds::sub::DataReader<Da
 	dds::sub::Sample<Data_0> message;	
 	assigned_port->read(&message);
 	Data_0 input_message = message.data();
-	Processingblock->pb_user_function<Data_0>(input_message, input_topic_name);	
+	Processingblock->user_functions<Data_0>(input_message, input_topic_name);	
 	listener_mutex.unlock();
 }
 
-//============================================================================================
+//============================================================================================================
 template <typename Data_0>
 class input_port
 {
@@ -136,7 +136,6 @@ class input_port
 		
 		void attach(Processing_block* pb, char* topic_name);
 		void read(dds::sub::Sample<Data_0>* sample);
-		void spin();
 };
 
 template <typename Data_0>
@@ -157,17 +156,13 @@ void input_port<Data_0>::attach(Processing_block* pb, char* topic_name)
 template <typename Data_0>
 void input_port<Data_0>::read(dds::sub::Sample<Data_0>* sample)
 {
-//	dds::core::cond::WaitSet ws;
-//	dds::sub::cond::ReadCondition rc(*((dds::sub::DataReader<Data_0>*)data_reader),dds::sub::status::DataState::new_data());
-//	ws.attach_condition(rc);
-//	ws.wait();	
 	input_data.resize(1);
 	iter = input_data.begin();
 	data_reader->take(iter,1);
 	*sample = *iter;
 }
 
-//==========================================================================================
+//============================================================================================================
 template <typename Data_0>
 class output_port
 {
