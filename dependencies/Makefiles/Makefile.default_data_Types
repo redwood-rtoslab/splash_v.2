@@ -9,17 +9,17 @@ LD            = $(CXX) $(CCFLAGS) $(PICFLAGS) $(GENFLAGS)
 AR            = ar
 PICFLAGS      = -fPIC
 CCFLAGS        =  
-CPPFLAGS      = $(PICFLAGS) $(GENFLAGS) -D_REENTRANT -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -Wall -Wno-unused-function -std=c++0x -I"/home/paul/DDS/HDE/x86_64.linux/include" -I"/home/paul/DDS/HDE/x86_64.linux/include/sys" -I"$(BOOST_ROOT)/." -I"/home/paul/DDS/HDE/x86_64.linux/include/dcps/C++/isocpp2" -I"/home/paul/DDS/HDE/x86_64.linux/include/dcps/C++/SACPP" -I"."
+CPPFLAGS      = $(PICFLAGS) $(GENFLAGS) -D_REENTRANT -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -Wall -Wno-unused-function -std=c++0x -I"$$HOME/DDS/HDE/x86_64.linux/include" -I"$$HOME/DDS/HDE/x86_64.linux/include/sys" -I"$(BOOST_ROOT)/." -I"$$HOME/DDS/HDE/x86_64.linux/include/dcps/C++/isocpp2" -I"$$HOME/DDS/HDE/x86_64.linux/include/dcps/C++/SACPP" -I".."
 
 OBJEXT        = .o
 OUTPUT_OPTION = -o "$@"
 COMPILE.c     = $(CC) $(CFLAGS) $(CPPFLAGS) -c
 COMPILE.cc    = $(CXX) $(CCFLAGS) $(CPPFLAGS) -c
-LDFLAGS       = -L"." -L"/home/paul/DDS/HDE/x86_64.linux/lib" -Wl,-rpath,\$$ORIGIN -Wl,-rpath,\$$/home/paul/DDS/HDE/x86_64.linux/lib
+LDFLAGS       = -L"." -L"$$HOME/DDS/HDE/x86_64.linux/lib" -Wl,-rpath,\$$ORIGIN -Wl,-rpath,\$$$$HOME/DDS/HDE/x86_64.linux/lib
 CCC           = $(CXX)
 MAKEFILE      = Makefile.default_data_Types
 DEPENDENCIES  = $(MAKEFILE)
-LTARGETDIR    = ./
+LTARGETDIR    = ../data_type_objects/
 CAT           = cat
 MV            = mv -f
 RM            = rm -rf
@@ -34,14 +34,14 @@ LIBPREFIX     = lib
 LIBSUFFIX     = 
 GENFLAGS      = -O3 -DNDEBUG
 LDLIBS        = -l"dcpsisocpp2$(LIBSUFFIX)" -l"ddskernel" -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
-OBJS          = .obj$(CFG)/default_dataSplDcps$(OBJEXT) .obj$(CFG)/default_data$(OBJEXT)
+OBJS          = ../.obj$(CFG)/default_dataSplDcps$(OBJEXT) ../.obj$(CFG)/default_data$(OBJEXT)
 AREXT         = .a
 LIB           = $(LTARGETDIR)$(LIBPREFIX)default_data_Types$(LIBSUFFIX)$(AREXT)
 SOEXT         = .so
-SHTARGETDIR   = ./
+SHTARGETDIR   = ../data_type_objects/
 SHLIB         = $(SHTARGETDIR)$(LIBPREFIX)default_data_Types$(LIBSUFFIX)$(SOEXT)
 SHFLAGS       = -shared
-SRC           = data_type_files/default_dataSplDcps.cpp data_type_files/default_data.cpp
+SRC           = ../data_type_files/default_dataSplDcps.cpp ../data_type_files/default_data.cpp
 LINK.cc       = $(LD) $(LDFLAGS)
 DYNAMICFLAGS  = -DOSPL_BUILDEXAMPLE_LIB
 EXPORTFLAGS   = $(DYNAMICFLAGS)
@@ -62,15 +62,15 @@ $(LIB): $(OBJS)
 
 GENERATED_DIRTY = default_dataSplDcps.cpp default_data.cpp default_data.h default_data_DCPS.hpp default_dataSplDcps.h
 
-export DYLD_LIBRARY_PATH := $(DYLD_LIBRARY_PATH):/home/paul/DDS/HDE/x86_64.linux/bin:/home/paul/DDS/HDE/x86_64.linux/lib
-export LD_LIBRARY_PATH   := $(LD_LIBRARY_PATH):/home/paul/DDS/HDE/x86_64.linux/bin:/home/paul/DDS/HDE/x86_64.linux/lib
-export SHLIB_PATH        := $(SHLIB_PATH):/home/paul/DDS/HDE/x86_64.linux/bin:/home/paul/DDS/HDE/x86_64.linux/lib
-export LIBPATH           := $(LIBPATH):/home/paul/DDS/HDE/x86_64.linux/bin:/home/paul/DDS/HDE/x86_64.linux/lib
-export PATH              := $(PATH):/home/paul/DDS/HDE/x86_64.linux/bin:/home/paul/DDS/HDE/x86_64.linux/lib
+export DYLD_LIBRARY_PATH := $(DYLD_LIBRARY_PATH):$$HOME/DDS/HDE/x86_64.linux/bin:$$HOME/DDS/HDE/x86_64.linux/lib
+export LD_LIBRARY_PATH   := $(LD_LIBRARY_PATH):$$HOME/DDS/HDE/x86_64.linux/bin:$$HOME/DDS/HDE/x86_64.linux/lib
+export SHLIB_PATH        := $(SHLIB_PATH):$$HOME/DDS/HDE/x86_64.linux/bin:$$HOME/DDS/HDE/x86_64.linux/lib
+export LIBPATH           := $(LIBPATH):$$HOME/DDS/HDE/x86_64.linux/bin:$$HOME/DDS/HDE/x86_64.linux/lib
+export PATH              := $(PATH):$$HOME/DDS/HDE/x86_64.linux/bin:$$HOME/DDS/HDE/x86_64.linux/lib
 
 .NOTPARALLEL:
-default_dataSplDcps.cpp default_data.cpp default_data.h default_data_DCPS.hpp default_dataSplDcps.h: ../idl/default_data.idl
-	"/home/paul/DDS/HDE/x86_64.linux/bin/idlpp" -I "/home/paul/DDS/HDE/x86_64.linux/etc/idl" -l isocpp2 -d data_type_files ../idl/default_data.idl
+default_dataSplDcps.cpp default_data.cpp default_data.h default_data_DCPS.hpp default_dataSplDcps.h: ../../idl/default_data.idl
+	"$$HOME/DDS/HDE/x86_64.linux/bin/idlpp" -I "$$HOME/DDS/HDE/x86_64.linux/etc/idl" -l isocpp2 -d ../data_type_files ../../idl/default_data.idl
 
 .PRECIOUS: $(GENERATED_DIRTY)
 $(OBJS): $(GENERATED_DIRTY)
@@ -78,13 +78,13 @@ $(OBJS): $(GENERATED_DIRTY)
 generated: $(GENERATED_DIRTY)
 	@-:
 
-.obj$(CFG)/default_dataSplDcps$(OBJEXT): data_type_files/default_dataSplDcps.cpp
-	@$(TESTDIRSTART) ".obj$(CFG)/" $(TESTDIREND) $(MKDIR) ".obj$(CFG)/"
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) data_type_files/default_dataSplDcps.cpp
+../.obj$(CFG)/default_dataSplDcps$(OBJEXT): ../data_type_files/default_dataSplDcps.cpp
+	@$(TESTDIRSTART) "../.obj$(CFG)/" $(TESTDIREND) $(MKDIR) "../.obj$(CFG)/"
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../data_type_files/default_dataSplDcps.cpp
 
-.obj$(CFG)/default_data$(OBJEXT): data_type_files/default_data.cpp
-	@$(TESTDIRSTART) ".obj$(CFG)/" $(TESTDIREND) $(MKDIR) ".obj$(CFG)/"
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) data_type_files/default_data.cpp
+../.obj$(CFG)/default_data$(OBJEXT): ../data_type_files/default_data.cpp
+	@$(TESTDIRSTART) "../.obj$(CFG)/" $(TESTDIREND) $(MKDIR) "../.obj$(CFG)/"
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../data_type_files/default_data.cpp
 
 clean:
 	-$(RM) $(OBJS)
@@ -92,7 +92,7 @@ clean:
 realclean: clean
 	-$(RM) $(SHLIB) $(LIB)
 	-$(RM) $(GENERATED_DIRTY)
-	-$(RM) .obj$(CFG)/
+	-$(RM) ../.obj$(CFG)/
 
 check-syntax:
 	$(COMPILE.cc) $(EXPORTFLAGS) $(CHK_SOURCES)

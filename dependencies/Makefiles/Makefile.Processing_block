@@ -9,16 +9,16 @@ LD            = $(CXX) $(CCFLAGS) $(PICFLAGS) $(GENFLAGS)
 AR            = ar
 PICFLAGS      = -fPIC
 CCFLAGS        =  
-CPPFLAGS      = $(PICFLAGS) $(GENFLAGS) -D_REENTRANT -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -Wall -Wno-unused-function -std=c++0x -I"/home/paul/DDS/HDE/x86_64.linux/include" -I"/home/paul/DDS/HDE/x86_64.linux/include/sys" -I"$(BOOST_ROOT)/." -I"/home/paul/DDS/HDE/x86_64.linux/include/dcps/C++/isocpp2" -I"/home/paul/DDS/HDE/x86_64.linux/include/dcps/C++/SACPP" -I"." 
+CPPFLAGS      = $(PICFLAGS) $(GENFLAGS) -D_REENTRANT -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -Wall -Wno-unused-function -std=c++0x -I"$$HOME/DDS/HDE/x86_64.linux/include" -I"$$HOME/DDS/HDE/x86_64.linux/include/sys" -I"$(BOOST_ROOT)/." -I"$$HOME/DDS/HDE/x86_64.linux/include/dcps/C++/isocpp2" -I"$$HOME/DDS/HDE/x86_64.linux/include/dcps/C++/SACPP" -I"." 
 OBJEXT        = .o
 OUTPUT_OPTION = -o "$@"
 COMPILE.c     = $(CC) $(CFLAGS) $(CPPFLAGS) -c
 COMPILE.cc    = $(CXX) $(CCFLAGS) $(CPPFLAGS) -c
-LDFLAGS       = -L"." -L"/home/paul/DDS/HDE/x86_64.linux/lib" -Wl,-rpath,\$$ORIGIN -Wl,-rpath,\$$/home/paul/DDS/HDE/x86_64.linux/lib
+LDFLAGS       = -L"." -L"$$HOME/DDS/HDE/x86_64.linux/lib" -Wl,-rpath,\$$ORIGIN -Wl,-rpath,\$$$$HOME/DDS/HDE/x86_64.linux/lib
 CCC           = $(CXX)
-MAKEFILE      = Makefile.Sink_tag
+MAKEFILE      = Makefile.Processing_block
 DEPENDENCIES  = $(MAKEFILE)
-LTARGETDIR    = ./
+LTARGETDIR    = ../linkables/
 CAT           = cat
 MV            = mv -f
 RM            = rm -rf
@@ -32,15 +32,15 @@ EXEEXT        =
 LIBPREFIX     = lib
 LIBSUFFIX     = 
 GENFLAGS      = -O3 -DNDEBUG
-LDLIBS        = -l"default_data_Types$(LIBSUFFIX)" -l"dcpsisocpp2$(LIBSUFFIX)" -l"ddskernel" -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
-OBJS          = .obj$(CFG)/Sink_tag$(OBJEXT)
+LDLIBS        = -L "../linkables/" -L "../data_type_objects/" -l"default_data_Types$(LIBSUFFIX)" -l"dcpsisocpp2$(LIBSUFFIX)" -l"ddskernel" -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
+OBJS          = ../.obj$(CFG)/Processing_block$(OBJEXT)
 AREXT         = .a
-LIB           = $(LTARGETDIR)$(LIBPREFIX)Sink_tag$(LIBSUFFIX)$(AREXT)
+LIB           = $(LTARGETDIR)$(LIBPREFIX)Processing_block$(LIBSUFFIX)$(AREXT)
 SOEXT         = .so
-SHTARGETDIR   = ./
-SHLIB         = $(SHTARGETDIR)$(LIBPREFIX)Sink_tag$(LIBSUFFIX)$(SOEXT)
+SHTARGETDIR   = ../linkables/
+SHLIB         = $(SHTARGETDIR)$(LIBPREFIX)Processing_block$(LIBSUFFIX)$(SOEXT)
 SHFLAGS       = -shared
-SRC           = ../src/Sink_tag.cpp
+SRC           = ../../src/Processing_block.cpp
 LINK.cc       = $(LD) $(LDFLAGS)
 DYNAMICFLAGS  = -DOSPL_BUILDEXAMPLE_IMPL_LIB
 EXPORTFLAGS   = $(DYNAMICFLAGS)
@@ -62,16 +62,16 @@ $(LIB): $(OBJS)
 generated: $(GENERATED_DIRTY)
 	@-:
 
-.obj$(CFG)/Sink_tag$(OBJEXT): ../src/Sink_tag.cpp
-	@$(TESTDIRSTART) ".obj$(CFG)/" $(TESTDIREND) $(MKDIR) ".obj$(CFG)/"
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../src/Sink_tag.cpp
+../.obj$(CFG)/Processing_block$(OBJEXT): ../../src/Processing_block.cpp
+	@$(TESTDIRSTART) "../.obj$(CFG)/" $(TESTDIREND) $(MKDIR) "../.obj$(CFG)/"
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../../src/Processing_block.cpp
 
 clean:
 	-$(RM) $(OBJS)
 
 realclean: clean
 	-$(RM) $(SHLIB) $(LIB)
-	-$(RM) .obj$(CFG)/
+	-$(RM) ../.obj$(CFG)/
 
 check-syntax:
 	$(COMPILE.cc) $(EXPORTFLAGS) $(CHK_SOURCES)
