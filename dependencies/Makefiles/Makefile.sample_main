@@ -9,12 +9,12 @@ LD            = $(CXX) $(CCFLAGS) $(PICFLAGS) $(GENFLAGS)
 AR            = ar
 PICFLAGS      = -fPIC
 CCFLAGS        =  
-CPPFLAGS      = $(PICFLAGS) $(GENFLAGS) -D_REENTRANT -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -Wall -Wno-unused-function -lstdc++ -std=c++0x -I"$$HOME/DDS/HDE/x86_64.linux/include" -I"$$HOME/DDS/HDE/x86_64.linux/include/sys" -I"$(BOOST_ROOT)/." -I"$$HOME/DDS/HDE/x86_64.linux/include/dcps/C++/isocpp2" -I"$$HOME/DDS/HDE/x86_64.linux/include/dcps/C++/SACPP" -I".." 
+CPPFLAGS      = $(PICFLAGS) $(GENFLAGS) -D_REENTRANT -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -Wall -g -Wno-unused-function -lstdc++ -std=c++0x -I"$$HOME/DDS/HDE/x86_64.linux/include" -I"$$HOME/DDS/HDE/x86_64.linux/include/sys" -I"$(BOOST_ROOT)/." -I"$$HOME/DDS/HDE/x86_64.linux/include/dcps/C++/isocpp2" -I"$$HOME/DDS/HDE/x86_64.linux/include/dcps/C++/SACPP" -I"../../src/include/" 
 OBJEXT        = .o
 OUTPUT_OPTION = -o "$@"
 COMPILE.c     = $(CC) $(CFLAGS) $(CPPFLAGS) -c
 COMPILE.cc    = $(CXX) $(CCFLAGS) $(CPPFLAGS) -c
-LDFLAGS       = -L"." -L"$$HOME/DDS/HDE/x86_64.linux/lib" -Wl,-rpath,\$$ORIGIN -Wl,-rpath,\$$HOME/DDS/HDE/x86_64.linux/lib -Wl,-rpath,\../data_type_objects/
+LDFLAGS       = -L"." -L"$$HOME/DDS/HDE/x86_64.linux/lib" -Wl,-rpath,\$$ORIGIN -Wl,-rpath,\$$HOME/DDS/HDE/x86_64.linux/lib -Wl,-rpath,\../data_type_objects/ -Wl,-rpath,\../linkables/
 CCC           = $(CXX)
 MAKEFILE      = Makefile.sample_main
 DEPENDENCIES  = $(MAKEFILE)
@@ -33,9 +33,9 @@ EXEEXT        =
 LIBPREFIX     = lib
 LIBSUFFIX     = 
 GENFLAGS      = -O3 -DNDEBUG
-LDLIBS        = -L "../linkables/" -L "../data_type_objects/" -l"default_data_Types$(LIBSUFFIX)" -l"default_data2_Types$(LIBSUFFIX)" -l"Output_pb_type_caster$(LIBSUFFIX)" -l"Processing_block$(LIBSUFFIX)" -l"dcpsisocpp2$(LIBSUFFIX)" -l"ddskernel" -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
+LDLIBS        = -L "../data_type_objects/" -l"default_data_Types$(LIBSUFFIX)" -l"default_data2_Types$(LIBSUFFIX)" -L "../linkables/" -l"Output_pb_type_caster$(LIBSUFFIX)"  -l"Processing_block$(LIBSUFFIX)" -l"dcpsisocpp2$(LIBSUFFIX)" -l"ddskernel" -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
 OBJS          = ../.obj$(CFG)/sample_main$(OBJEXT)
-SRC           = ../../src/sample_main.cpp
+SRC           = ../../src/src/sample_main.cpp
 LINK.cc       = $(LD) $(LDFLAGS)
 EXPORTFLAGS   = 
 
@@ -52,9 +52,9 @@ $(BIN): $(OBJS)
 generated: $(GENERATED_DIRTY)
 	@-:
 
-../.obj$(CFG)/sample_main$(OBJEXT): ../../src/sample_main.cpp
+../.obj$(CFG)/sample_main$(OBJEXT): ../../src/src/sample_main.cpp
 	@$(TESTDIRSTART) "../.obj$(CFG)/" $(TESTDIREND) $(MKDIR) "../.obj$(CFG)/"
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../../src/sample_main.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../../src/src/sample_main.cpp
 
 clean:
 	-$(RM) $(OBJS)

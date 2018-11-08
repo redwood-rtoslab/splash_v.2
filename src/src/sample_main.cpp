@@ -1,7 +1,7 @@
-#include "Processing_block.cpp"
+#include "../include/Processing_block.h"
 #include "Output_pb_type_caster.cpp"
 #include <string.h>
-#include "data_type_headers.h"
+#include "../include/data_type_headers.h"
 
 
 template <typename Data_0>
@@ -11,7 +11,7 @@ void Processing_block::user_functions(Data_0 message, char* input_topic)
 	{//function called when port C receives input
 		
 		default_data::Msg A;
-		this->write(&A, "Test3");		
+		//this->write(&A, "Test3");		
 	}
 
 	else if(!strcmp("Test2",input_topic))

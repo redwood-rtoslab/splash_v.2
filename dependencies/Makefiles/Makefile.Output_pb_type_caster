@@ -40,7 +40,7 @@ SOEXT         = .so
 SHTARGETDIR   = ../linkables/
 SHLIB         = $(SHTARGETDIR)$(LIBPREFIX)Output_pb_type_caster$(LIBSUFFIX)$(SOEXT)
 SHFLAGS       = -shared
-SRC           = ../../src/Output_pb_type_caster.cpp
+SRC           = ../../src/src/Output_pb_type_caster.cpp
 LINK.cc       = $(LD) $(LDFLAGS)
 DYNAMICFLAGS  = -DOSPL_BUILDEXAMPLE_IMPL_LIB
 EXPORTFLAGS   = $(DYNAMICFLAGS)
@@ -62,9 +62,9 @@ $(LIB): $(OBJS)
 generated: $(GENERATED_DIRTY)
 	@-:
 
-../.obj$(CFG)/Output_pb_type_caster$(OBJEXT): ../../src/Output_pb_type_caster.cpp
+../.obj$(CFG)/Output_pb_type_caster$(OBJEXT): ../../src/src/Output_pb_type_caster.cpp
 	@$(TESTDIRSTART) "../.obj$(CFG)/" $(TESTDIREND) $(MKDIR) "../.obj$(CFG)/"
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../../src/Output_pb_type_caster.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../../src/src/Output_pb_type_caster.cpp
 
 clean:
 	-$(RM) $(OBJS)

@@ -1,9 +1,8 @@
-#include "data_type_headers.h"
-#include "../includes/Processing_block.h"
+#include "../include/data_type_headers.h"
+#include "../include/Processing_block.h"
 #include <vector>
 #include <map>
 #include <mutex>
-#pragma once
 
 dds::domain::DomainParticipant* Processing_block::get_domain()
 {

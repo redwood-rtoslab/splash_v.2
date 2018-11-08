@@ -1,5 +1,5 @@
-#include "Processing_block.cpp"
-#include "data_type_headers.h"
+#include "../include/Processing_block.h"
+#include "../include/data_type_headers.h"
 
 int main(void)
 {
