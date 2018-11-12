@@ -16,10 +16,10 @@ COMPILE.c     = $(CC) $(CFLAGS) $(CPPFLAGS) -c
 COMPILE.cc    = $(CXX) $(CCFLAGS) $(CPPFLAGS) -c
 LDFLAGS       = -L"." -L"$$HOME/DDS/HDE/x86_64.linux/lib" -Wl,-rpath,\$$ORIGIN -Wl,-rpath,\$$HOME/DDS/HDE/x86_64.linux/lib -Wl,-rpath,\../data_type_objects/ -Wl,-rpath,\../linkables/
 CCC           = $(CXX)
-MAKEFILE      = Makefile.sample_main
+MAKEFILE      = Makefile.sample_main_fusion
 DEPENDENCIES  = $(MAKEFILE)
 BTARGETDIR    = ../executables/
-BIN	      = $(BTARGETDIR)sample_main$(EXESUFFIX)$(EXEEXT)
+BIN	      = $(BTARGETDIR)sample_main_fusion$(EXESUFFIX)$(EXEEXT)
 CAT           = cat
 MV            = mv -f
 RM            = rm -rf
@@ -34,8 +34,8 @@ LIBPREFIX     = lib
 LIBSUFFIX     = 
 GENFLAGS      = -O3 -DNDEBUG
 LDLIBS        = -L "../data_type_objects/" -l"default_data_Types$(LIBSUFFIX)" -l"default_data2_Types$(LIBSUFFIX)" -L "../linkables/" -l"dcpsisocpp2$(LIBSUFFIX)" -l"ddskernel" -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
-OBJS          = ../.obj$(CFG)/sample_main$(OBJEXT)
-SRC           = ../../src/src/application/sample_main.cpp
+OBJS          = ../.obj$(CFG)/sample_main_fusion$(OBJEXT)
+SRC           = ../../src/src/application/sample_main_fusion.cpp
 LINK.cc       = $(LD) $(LDFLAGS)
 EXPORTFLAGS   = 
 
@@ -52,9 +52,9 @@ $(BIN): $(OBJS)
 generated: $(GENERATED_DIRTY)
 	@-:
 
-../.obj$(CFG)/sample_main$(OBJEXT): ../../src/src/application/sample_main.cpp
+../.obj$(CFG)/sample_main_fusion$(OBJEXT): ../../src/src/application/sample_main_fusion.cpp
 	@$(TESTDIRSTART) "../.obj$(CFG)/" $(TESTDIREND) $(MKDIR) "../.obj$(CFG)/"
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../../src/src/application/sample_main.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../../src/src/application/sample_main_fusion.cpp
 
 clean:
 	-$(RM) $(OBJS)

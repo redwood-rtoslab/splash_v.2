@@ -1,7 +1,7 @@
-#include "Source_tag.cpp"
-#include "Sink_tag.cpp"
-#include "Output_st_type_caster.cpp"
-#include "data_type_headers.h"
+#include "../language_construct/Source_tag.cpp"
+#include "../language_construct/Sink_tag.cpp"
+#include "../type_caster/Output_st_type_caster.cpp"
+#include "../../include/data_type_headers.h"
 
 void Source_tag::user_function()
 {

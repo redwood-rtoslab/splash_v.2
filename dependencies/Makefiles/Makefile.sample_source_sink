@@ -35,7 +35,7 @@ LIBSUFFIX     =
 GENFLAGS      = -O3 -DNDEBUG
 LDLIBS        = -L "../linkables" -L "../data_type_objects" -l"Processing_block$(LIBSUFFIX)" -l"default_data2_Types$(LIBSUFFX)" -l"default_data_Types$(LIBSUFFIX)" -l"dcpsisocpp2$(LIBSUFFIX)" -l"ddskernel" -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
 OBJS          = ../.obj$(CFG)/sample_source_sink$(OBJEXT)
-SRC           = ../../src/sample_source_sink.cpp
+SRC           = ../../src/src/application/sample_source_sink.cpp
 LINK.cc       = $(LD) $(LDFLAGS)
 EXPORTFLAGS   = 
 
@@ -52,9 +52,9 @@ $(BIN): $(OBJS)
 generated: $(GENERATED_DIRTY)
 	@-:
 
-../.obj$(CFG)/sample_source_sink$(OBJEXT): ../../src/sample_source_sink.cpp
+../.obj$(CFG)/sample_source_sink$(OBJEXT): ../../src/src/application/sample_source_sink.cpp
 	@$(TESTDIRSTART) "../.obj$(CFG)/" $(TESTDIREND) $(MKDIR) "../.obj$(CFG)/"
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../../src/sample_source_sink.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) ../../src/src/application/sample_source_sink.cpp
 
 clean:
 	-$(RM) $(OBJS)

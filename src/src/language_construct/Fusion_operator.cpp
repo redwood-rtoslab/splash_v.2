@@ -1,4 +1,4 @@
-#include "data_type_headers.h"
+#include "../../include/data_type_headers.h"
 #include <vector>
 #include <map>
 #include <mutex>
@@ -13,21 +13,18 @@ class Fusion_operator
 		dds::pub::Publisher pb_pub{pb_domain_participant, pb_domain_participant.default_publisher_qos()};
 		dds::sub::Subscriber pb_sub{pb_domain_participant, pb_domain_participant.default_subscriber_qos()};
 		std::map<char*, void*> input_port_map;
-		std::map<char*, void*> output_port_map;
-		
+		int number_of_input_ports=0;
+		void* fused_output_port;
+		void* bitset_of_input_ports;
 	public:
 		dds::domain::DomainParticipant* get_domain();
 		dds::pub::Publisher* get_publisher();
 		dds::sub::Subscriber* get_subscriber();
 		std::map<char*,void*>* get_input_port_map();
-		std::map<char*,void*>* get_output_port_map();
-		void* get_output_port(char* topic_name);
+		void fuse();
+		void* get_output_port();
 		void* get_input_port(char* topic_name);
-		void write(void* output_data, char* output_topic_name);
 		void initiate();
-
-		template <typename Data_0>
-		void user_functions(Data_0, char* input_topic);
 };
 
 dds::domain::DomainParticipant* Fusion_operator::get_domain()
@@ -50,14 +47,9 @@ std::map<char*,void*>* Fusion_operator::get_input_port_map()
 	return &input_port_map;
 }
 
-std::map<char*,void*>* Fusion_operator::get_output_port_map()
+void* Fusion_operator::get_output_port()
 {
-	return &output_port_map;
-}
-
-void* Fusion_operator::get_output_port(char* topic_name)
-{
-	return output_port_map[topic_name];
+	return fused_output_port;
 }
 
 void* Fusion_operator::get_input_port(char* topic_name)
@@ -67,7 +59,8 @@ void* Fusion_operator::get_input_port(char* topic_name)
 
 void Fusion_operator::initiate()
 {
-
+	int a = number_of_input_ports;
+	bitset_of_input_ports = new std::bitset<100>;
 	while(1) sleep(10000);
 }
 
@@ -77,7 +70,7 @@ template <typename Data_0>
 class Fusion_operator_listener: public dds::sub::NoOpDataReaderListener<Data_0>
 {
 	private:
-		Fusion_operator* Processingblock;
+		Fusion_operator* Fusionoperator;
 		char* input_topic_name;
 		std::mutex listener_mutex;
 		input_port<Data_0>* assigned_port;
@@ -91,7 +84,7 @@ class Fusion_operator_listener: public dds::sub::NoOpDataReaderListener<Data_0>
 template <typename Data_0>
 void Fusion_operator_listener<Data_0>::register_fusion_operator(Fusion_operator* Fusion_operator)
 {
-	Processingblock = Fusion_operator;
+	Fusionoperator = Fusion_operator;
 }
 
 template <typename Data_0>
@@ -111,12 +104,11 @@ void Fusion_operator_listener<Data_0>::register_topic_name(char* topic_name)
 template <typename Data_0>//passing data reader as the parameter is crucial
 void Fusion_operator_listener<Data_0>::on_data_available(dds::sub::DataReader<Data_0>& dr)
 {
-	listener_mutex.lock();	
 	dds::sub::Sample<Data_0> message;	
 	assigned_port->read(&message);
 	Data_0 input_message = message.data();
-	Processingblock->user_functions<Data_0>(input_message, input_topic_name);	
-	listener_mutex.unlock();
+	(assigned_port->received_data).push_back(input_message);
+		
 }
 
 //============================================================================================================
@@ -125,6 +117,7 @@ class input_port
 {
 	private:
 		int mandatory;
+		std::vector<Data_0> received_data;
 		dds::topic::Topic<Data_0>* topic;
 		dds::sub::DataReader<Data_0>* data_reader;
 		Fusion_operator_listener<Data_0> input_port_listener;			
@@ -140,6 +133,8 @@ template <typename Data_0>
 void input_port<Data_0>::attach(Fusion_operator* pb, char* topic_name)
 {	
 	(*(pb->get_input_port_map()))[topic_name] = this;		
+	pb->number_of_input_ports++;
+
 	input_port_listener.register_fusion_operator(pb);	
 	input_port_listener.register_topic_name(topic_name);
 	input_port_listener.register_input_port(this);
@@ -177,7 +172,7 @@ class output_port
 template<typename Data_0>
 void output_port<Data_0>::attach(Fusion_operator* pb, char* topic_name)
 {
-	(*(pb->get_output_port_map()))[topic_name]=this;
+	pb->fused_output_port = this;
 	topic = new dds::topic::Topic<Data_0> (*(pb->get_domain()),topic_name,(pb->get_domain())->default_topic_qos());
 
 	data_writer = new dds::pub::DataWriter<Data_0>(*(pb->get_publisher()),*topic,(*(pb->get_publisher())).default_datawriter_qos());

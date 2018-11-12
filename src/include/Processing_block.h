@@ -72,3 +72,11 @@ class output_port
 		void write(Data_0);
 		void attach(Processing_block* pb, char* topic_name);
 };
+
+template class input_port<default_data::Msg>;
+template class output_port<default_data::Msg>;
+template class processingblock_listener<default_data::Msg>;
+template class input_port<default_data2::Msg>;
+template class output_port<default_data2::Msg>;
+template class processingblock_listener<default_data2::Msg>;
+

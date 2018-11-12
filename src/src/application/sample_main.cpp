@@ -1,7 +1,7 @@
-#include "../include/Processing_block.h"
-#include "Output_pb_type_caster.cpp"
+#include "../language_construct/Processing_block.cpp"
+#include "../type_caster/Output_pb_type_caster.cpp"
 #include <string.h>
-#include "../include/data_type_headers.h"
+#include "../../include/data_type_headers.h"
 
 
 template <typename Data_0>

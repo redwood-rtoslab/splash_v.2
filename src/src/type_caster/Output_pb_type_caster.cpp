@@ -1,5 +1,5 @@
-#include "../include/data_type_headers.h"
-#include "../include/Processing_block.h"
+#include "../../include/data_type_headers.h"
+#include "../language_construct/Processing_block.cpp"
 #include <string.h>
 #pragma once
 void Processing_block::write(void* data, char* Output_topic_name)
