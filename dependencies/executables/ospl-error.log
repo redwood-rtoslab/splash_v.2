@@ -1,0 +1,41 @@
+========================================================================================
+Report      : ERROR
+Date        : Mon Nov 12 02:30:43 PST 2018
+Description : Element 'OpenSplice/DDSI2Service/Discovery/Peers/Peer' required attribute 'Address' is missing
+Node        : ubuntu
+Process     : sample_main <2214>
+Thread      : spliced 7f672f1fb700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/configuration validator/cfg_validator.c/182/0/1542018643.604530008/0
+========================================================================================
+Report      : ERROR
+Date        : Mon Nov 12 02:30:43 PST 2018
+Description : Element 'OpenSplice/DDSI2Service/Discovery/Peers/Peer' incorrect value '147.47.208.48:7400'
+Node        : ubuntu
+Process     : sample_main <2214>
+Thread      : spliced 7f672f1fb700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/configuration validator/cfg_validator.c/111/0/1542018643.604577706/0
+========================================================================================
+Report      : ERROR
+Date        : Mon Nov 12 02:30:43 PST 2018
+Description : Syntax error in configuration from URI: "file:///home/paul/DDS/HDE/x86_64.linux/etc/config/ospl_sp_ddsi.xml".
+Node        : ubuntu
+Process     : sample_main <2214>
+Thread      : spliced 7f672f1fb700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/user::u_domain::u_domainNew/u_domain.c/777/774/1542018643.604696068/-1
+========================================================================================
+Context     : dds:domain::DomainParticipant::DomainParticipant
+Date        : Mon Nov 12 02:30:48 PST 2018
+Node        : ubuntu
+Process     : sample_main <2214>
+Thread      : main thread 7f672f1dc740
+Internals   : DomainParticipantDelegate.cpp/89/6.7.180404OSS/de8c6f4/de8c6f4/-1
+----------------------------------------------------------------------------------------
+Report      : Error: Failed to create DomainParticipant
+Internals   : org::opensplice::domain::DomainParticipantDelegate::DomainParticipantDelegate/DomainParticipantDelegate.cpp/89/1/1542018648.632132093
+----------------------------------------------------------------------------------------
+Report      : Failure to open the domain, domain id = 2147483647 and URI="<NULL>" The most common cause of this error is that OpenSpliceDDS is not running (when using shared memory mode). Please make sure to start OpenSplice before creating a DomainParticipant.
+Internals   : u_participantNew/u_participant.c/232/773/1542018648.632149378
+----------------------------------------------------------------------------------------
+Report      : Domain 'ospl_sp_ddsi' has not been started successfully
+
+Internals   : user::u_domain::u_domainOpen/u_domain.c/1335/773/1542018648.632162933

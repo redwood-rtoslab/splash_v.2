@@ -1,3 +1,4 @@
+//138
 #include "../../include/data_type_headers.h"
 #include <vector>
 #include <map>
@@ -13,17 +14,25 @@ class Fusion_operator
 		dds::pub::Publisher pb_pub{pb_domain_participant, pb_domain_participant.default_publisher_qos()};
 		dds::sub::Subscriber pb_sub{pb_domain_participant, pb_domain_participant.default_subscriber_qos()};
 		std::map<char*, void*> input_port_map;
-		int number_of_input_ports=0;
+		std::map<char*, bool> mandatory_port_map;
+		std::map<char*, bool> optional_port_map;
+
 		void* fused_output_port;
-		void* bitset_of_input_ports;
+
+		int received_optional_port=0;
+		int optional_count=0;
 	public:
 		dds::domain::DomainParticipant* get_domain();
 		dds::pub::Publisher* get_publisher();
 		dds::sub::Subscriber* get_subscriber();
 		std::map<char*,void*>* get_input_port_map();
+		std::map<char*, bool>* get_mandatory_port_map();
+		std::map<char*, bool>* get_optional_port_map();
+
 		void fuse();
 		void* get_output_port();
 		void* get_input_port(char* topic_name);
+		void initialize(int opt_count);
 		void initiate();
 };
 
@@ -57,10 +66,17 @@ void* Fusion_operator::get_input_port(char* topic_name)
 	return input_port_map[topic_name];
 }
 
+std::map<char*, bool>* Fusion_operator::get_mandatory_port_map()
+{
+	return &mandatory_port_map;
+}
+
+std::map<char*, bool>* Fusion_operator::get_optional_port_map()
+{
+	return &optional_port_map;
+}
 void Fusion_operator::initiate()
 {
-	int a = number_of_input_ports;
-	bitset_of_input_ports = new std::bitset<100>;
 	while(1) sleep(10000);
 }
 
@@ -104,37 +120,62 @@ void Fusion_operator_listener<Data_0>::register_topic_name(char* topic_name)
 template <typename Data_0>//passing data reader as the parameter is crucial
 void Fusion_operator_listener<Data_0>::on_data_available(dds::sub::DataReader<Data_0>& dr)
 {
+	int mand_all=0;
+	int opt_all=0;
+	std::map<char*, bool>::iterator mand_iter;
+	std::map<char*, bool>::iterator opt_iter;
 	dds::sub::Sample<Data_0> message;	
 	assigned_port->read(&message);
 	Data_0 input_message = message.data();
-	(assigned_port->received_data).push_back(input_message);
-		
+	if(assigned_port->is_mand())
+	{
+		(*(Fusionoperator->get_mandatory_port_map()))[input_topic_name] = 1;
+	}
+	
+		else (*(Fusionoperator->get_optional_port_map()))[input_topic_name]=1;
+
+	for(mand_iter = (Fusionoperator->get_mandatory_port_map())->begin();mand_iter!=(Fusionoperator->get_mandatory_port_map())->end();mand_iter++)
+	{
+			
+	}	
 }
+
 
 //============================================================================================================
 template <typename Data_0>
 class input_port
 {
 	private:
-		int mandatory;
-		std::vector<Data_0> received_data;
+		bool mandatory;
 		dds::topic::Topic<Data_0>* topic;
 		dds::sub::DataReader<Data_0>* data_reader;
 		Fusion_operator_listener<Data_0> input_port_listener;			
 		std::vector<dds::sub::Sample<Data_0>> input_data;
+		std::vector<Data_0> input_data_vector;
 		typename std::vector<dds::sub::Sample<Data_0>>::iterator iter;		
 	public:
-		
-		void attach(Fusion_operator* pb, char* topic_name);
+		bool is_mand();	
+		void attach(Fusion_operator* pb, char* topic_name, bool mandatory);
 		void read(dds::sub::Sample<Data_0>* sample);
+		std::vector<Data_0>* access_input_datas();
 };
 
 template <typename Data_0>
-void input_port<Data_0>::attach(Fusion_operator* pb, char* topic_name)
+bool input_port<Data_0>::is_mand()
+{
+	return mandatory; 
+}
+
+template <typename Data_0>
+std::vector<Data_0>* input_port<Data_0>:: access_input_datas()
+{
+	return &input_data;
+}
+
+template <typename Data_0>
+void input_port<Data_0>::attach(Fusion_operator* pb, char* topic_name, bool mandatory)
 {	
 	(*(pb->get_input_port_map()))[topic_name] = this;		
-	pb->number_of_input_ports++;
-
 	input_port_listener.register_fusion_operator(pb);	
 	input_port_listener.register_topic_name(topic_name);
 	input_port_listener.register_input_port(this);
@@ -172,7 +213,6 @@ class output_port
 template<typename Data_0>
 void output_port<Data_0>::attach(Fusion_operator* pb, char* topic_name)
 {
-	pb->fused_output_port = this;
 	topic = new dds::topic::Topic<Data_0> (*(pb->get_domain()),topic_name,(pb->get_domain())->default_topic_qos());
 
 	data_writer = new dds::pub::DataWriter<Data_0>(*(pb->get_publisher()),*topic,(*(pb->get_publisher())).default_datawriter_qos());
